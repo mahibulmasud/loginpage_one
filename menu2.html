@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta>
+    <title>menu-02</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        *{margin: 0;padding: 0;}
+        header{
+            background-color: #e4518378;
+        }
+        .container{
+            width: 80%;
+            margin:0 auto;
+        }
+        .main{
+            height: 10vh;
+            display: flex;
+            align-items: center;
+        }
+        .main div:nth-of-type(1) {flex-grow: 9;}
+        .main div:nth-of-type(2) {flex-grow: 0.5;cursor: pointer;}
+        .main div:nth-of-type(2):hover{font-size:25px;}
+        .main div:nth-of-type(3) {flex-grow: 0.5;cursor: pointer;}
+        .main div:nth-of-type(3):hover{font-size:25px;}
+        .main div:nth-of-type(4) {flex-grow: 0.5;cursor: pointer;}
+        .main div:nth-of-type(4):hover{font-size:25px;}
+        p{
+            font-size: 25px;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <div class="main container">
+                <div class="firstdiv"> <p>logo</p></div>
+                <div>Home</div>
+                <div>About</div>
+                <div>Contact</div>
+            </div>
+    </header>
+</body>
+</html>

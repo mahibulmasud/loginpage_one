@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <style>
+        *{margin:0;padding:0;outline: 0;box-sizing: border-box;}
+        .main-div{
+            text-align: center;
+            height: 100vh;
+            width: 100%;
+            font-family: arial;
+        }
+        .clip-one{
+            width: 100%;
+            height: 100%;
+            background: rgb(87,27,203);
+            background: linear-gradient(90deg, rgba(87,27,203,0.969625350140056) 55%, rgba(111,34,223,0.9556197478991597) 70%, rgba(117,34,238,0.8855917366946778) 82%, rgba(68,49,239,1) 93%);
+            clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 29%, 84% 23%, 73% 13%, 54% 18%, 47% 7%);
+            z-index: 0;
+            position:absolute;
+            top: 0;
+            z-index: -1;
+        }
+        .clip-two{
+            width: 100%;
+            height: 100%;
+            background: rgb(87,27,203);
+            background: linear-gradient(90deg, rgba(87,27,203,0.969625350140056) 55%, rgba(111,34,223,0.9556197478991597) 70%, rgba(117,34,238,0.8855917366946778) 82%, rgba(68,49,239,1) 93%);
+            clip-path: polygon(30% 100%, 70% 100%, 100% 100%, 100% 71%, 84% 77%, 73% 87%, 54% 82%, 47% 93%);
+            z-index: 0;
+            position:absolute;
+            top: 0;
+            z-index: -1;
+        }
+        .layout-main{
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+            height: 100%;
+        }
+        .part-one{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .title{
+            margin-bottom: 30px;
+        }
+        .title h1{
+            font-family:cursive;
+        }
+        .form-icon{
+            font-size: 20px;
+            padding: 12px 15px;
+            border-radius: 5px 0px 0px 5px;
+            color: rgb(87,27,203);
+            
+        }
+        .input-feild{
+            border-radius: 20px;
+            font-size: 21px;
+            padding: 10px;
+            outline:0;
+            border: 0;
+        }
+        .input-feild::placeholder {
+            color: rgba(255, 0, 0, 0.438);
+        }
+        .input-container{
+            display: flex;
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 20px;
+            /* border: 1px solid blue; */
+            box-shadow: 0px 4px 15px -2px rgb(87 27 203);
+        }
+        input[type=submit]{
+            position: relative;
+            cursor: pointer;
+            font-size: 21px;
+            padding: 10px 40px;
+            border-radius: 10px;
+            outline:0;
+            border: 0;
+            border:1px solid rgba(0, 0, 255, 0.486);
+            background: rgba(0, 0, 0, 0);
+        }
+        input[type="submit"]:hover{
+            background-color: #7A31E5;
+            color: white;
+        } 
+        .part-two{
+            position: relative;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .part-two p{
+            width: 35vw;
+        }
+        .devider{
+            width: 20%;
+            border: 2px solid blue;
+            outline: 0;
+            margin: 20px auto;
+        }
+        @media only screen and (max-width: 600px) {
+            .part-two{
+                display: none;
+            }
+        }
+        .login-logo{
+            transform: rotate(320deg);
+            position: absolute;
+            top: 51px;
+            left: 49px;
+            color: wheat;
+            background: #0000ffc2;
+            font-size: 5vmin;
+            padding: 20px;
+            font-family: cursive;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="clip-one"></div>
+        <div class="clip-two"></div>
+        
+        <div class="layout-main">
+            <div class="part-one">
+                <div>
+                    <div class="title">
+                        <p class="login-logo">Login</p>
+                        <h1>Hello!</h1>
+                        <p>Sign in to your account</p>
+                    </div>
+                    <form action="" method="post">
+                        <div class="input-container">
+                            <i class="fas fa-envelope-open form-icon"></i>
+                            <input class="input-feild" type="email" name="email" placeholder="E-mail">
+                        </div>
+                        <br><br>
+                        <div class="input-container">
+                            <i class="fas fa-lock form-icon"></i>
+                            <input class="input-feild" type="password" name="password" placeholder="Password">
+                        </div>
+                        <br><br>                    
+                        <input class="button" type="submit" name="submit" value="Login">
+                        
+                    </form>
+                </div>
+               
+            </div>
+            <div class="part-two">
+                <div>
+                    <h1>Welcome !</h1>
+                    <hr class="devider">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate fugiat dicta minima, nihil repellendus pariatur reprehenderit molestias? Porro quia qui iure maiores ipsum? Aut voluptate eum amet dolores facere tempora?</p>
+                </div>      
+            </div>
+        </div>
+            
+        
+    </div>
+    
+</body>
+</html>

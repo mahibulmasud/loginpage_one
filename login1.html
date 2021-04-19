@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <style>
+        .container {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .main{
+            position: relative;
+            text-align: center;
+            box-shadow: -1px 4px 18px 0px #d29fb0b8;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input[type=text]{
+            width: 300px;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid pink;
+            outline: none;
+            box-sizing: border-box;
+            color: darkred;
+        }
+        input[type=text]:focus {
+        border: 1px solid red;
+        }
+        input[type=password]{
+            width: 300px;
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid pink;
+            outline: none;
+            box-sizing: border-box;
+            color: darkred;
+        }
+        input[type=password]:focus {
+        border: 1px solid red;
+        }
+        input[type=submit]{
+            box-sizing: border-box;
+            cursor: pointer;
+            width: 300px;
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid pink;
+            background-color: rgba(0, 0, 0, 0);
+            color: #d88997;
+            font-weight: bold;
+            outline: 0;
+            transition:color 1s;
+        }
+        input[type=submit]:hover{
+            background-color: pink;
+            color: white;
+        }
+        input[type=submit]:focus{
+            border: 1px solid red;
+        }
+        .logintitle{
+            font-size: 25px;
+        }
+        .userloginicon{
+            text-align: center;
+            font-size: 80px;
+            width: 80px;
+            height: 80px;
+            background: #d88997;
+            border: 1px solid #b90441;
+            padding: 20px;
+            border-radius: 50%;
+            color: white;
+            margin-top: -80px;
+            cursor: pointer;
+        }
+        </style>    
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <i class="fas fa-user-tie userloginicon"></i>
+            <h1 class="logintitle">Member login</h1>
+            <form action="" method="post">
+                <input type="text" name="username" placeholder="Username"><br><br>
+                <input type="password" name="password" placeholder="Passowrd"><br><br>
+                <input type="submit" name="submit" value="Login">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+   

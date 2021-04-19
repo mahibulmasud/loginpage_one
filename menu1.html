@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>menu-01</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        *{margin: 0;padding: 0;}
+        section{
+            background-color: gray;
+        }
+        .nav-main{
+            display:grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .one{
+            display: grid;
+            align-items: center;
+        }
+        .one h1{
+            margin-left: 100px;
+            color: white;
+        }
+        .two{
+            float: right;
+        }
+        .two ul li{
+            list-style-type: none;
+            cursor: pointer;
+            float: left;
+            padding: 20px 20px;
+            color: white;
+
+        }
+        .two ul li:last-child{
+            margin-right: 100px;
+            padding-right: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <section>
+            <div class="nav-main">
+                <div class="one">
+                    <h1>logo</h1>
+                </div>
+                <div>
+                    <div class="two">
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Service</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </header>
+
+</body>
+</html>

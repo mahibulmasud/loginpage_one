@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu-03</title>
+    <style>
+        *{margin:0;padding: 0;}
+        section{
+            background-color: #2196f382;
+            font-family:arial;
+        }
+        .container{
+            margin: 0 auto;
+            width: 80%;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: 9fr 200px;
+        }
+      
+        .logo img{
+            padding: 10px 0px;
+            width: 50px;
+            height: 50px;
+        }
+        .nav{
+            display: grid;
+            align-items: center;
+        }
+        .nav ul li{ 
+            list-style-type: none;
+        }
+        .nav ul li a{ 
+            color: green;
+            float: left;
+            text-decoration: none;
+            padding: 0px 20px;
+            transform: scale(1);
+            transition: color 1s, transform 1s;
+        }
+        .nav ul li a:last-child{
+            padding-right:0px;
+        }
+        .nav ul li a:hover{
+            transform: scale(1.5);
+            color: white;
+        }
+        .toggle-button{
+            display: none;
+        }
+        #toggle-menu{
+            display: none;
+            font-family: arial;
+            /* transition: display 1s; */
+        }
+        #toggle-menu a{
+            border: 1px solid blue;
+            text-align: center;
+            display: block;
+            padding: 20px 0px;
+            text-decoration: none;
+            color:blue;
+            font-size: 20px;
+        }
+        @media only screen and (max-width: 700px){
+            .nav ul{
+                display: none;
+            }
+            .toggle-button{
+                display: block;
+                width: 65px;
+                height: 30px;
+            }
+            .main{
+            display: grid;
+            grid-template-columns: 1fr 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- header section start -->
+        <section>
+            <div class="main container">
+                <div class="logo">
+                    <img src="http://mct.daffodilvarsity.edu.bd/images/diuIcon.png" alt="">
+                </div>
+                <div class="nav">
+                        <ul>
+                            <li><a href="#">Home</a> </li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>   
+                        <button class="toggle-button" id="toggle-button">menu</button> 
+                </div>
+            </div>     
+        </section>
+        <div id="toggle-menu">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">About</a></div>
+            <div><a href="#">Contact</a></div>
+        </div>
+    <!-- header section end -->
+
+    <!-- javascript start -->
+    <script>
+        document.getElementById('toggle-button').addEventListener('click',function(){
+            x = document.getElementById('toggle-menu');
+            // document.getElementById('toggle-menu').style.display= 'block';
+        
+                    if (x.style.display == 'block') {
+                        document.getElementById('toggle-menu').style.display= 'none';
+                    } else {
+                        document.getElementById('toggle-menu').style.display= 'block';
+                    }
+                })
+    </script>
+    <!-- javascript end -->
+</body>
+</html>
